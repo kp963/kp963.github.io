@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Assignment</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+
+    <nav>
+        <button onclick="showSection('reverseSection')">String Reversal</button>
+        <button onclick="showSection('palindromeSection')">Palindrome Checker</button>
+        <button onclick="showSection('tipSection')">Tip Calculator</button>
+        <a href="resume.html"><button>Assignment 1</button></a>
+        <a href="lab1.html"><button>Lab 1</button></a>
+    </nav>
+
+
+    <section id="reverseSection">
+        <h2>String Reversal</h2>
+        <input type="text" id="stringInput" placeholder="Enter a string">
+        <button onclick="reverseString()">Reverse</button>
+        <p id="reversedOutput"></p>
+    </section>
+
+
+    <section id="palindromeSection">
+        <h2>Palindrome Checker</h2>
+        <input type="text" id="numberInput" placeholder="Enter numbers">
+        <button onclick="checkPalindrome()">Check</button>
+        <p id="palindromeOutput"></p>
+    </section>
+
+
+    <section id="tipSection">
+        <h2>Tip Calculator</h2>
+        <input type="number" id="billSubtotal" placeholder="Subtotal">
+        <input type="number" id="tipPercentage" placeholder="Tip %">
+        <button onclick="calculateTotal()">Calculate</button>
+        <p id="totalOutput"></p>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
